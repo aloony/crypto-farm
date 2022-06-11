@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+profiles/*
+!profiles
+matamask_accounts/*
+!matamask_accounts
+python/logs/*
+!python/logs
+python/prefabs/*
+!python/prefabs

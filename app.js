@@ -1,0 +1,18 @@
+require('dotenv').config()
+
+const createWallets = require('./utils/createWallets')
+const createAccounts = require('./utils/createAccounts')
+const handGameProcess = require('./utils/handGameProcess')
+const autoGameProcess = require('./utils/autoGameProcess')
+const botProcess = require('./utils/botProcess')
+
+if (process.argv[2] == 'cw')
+  createWallets()
+else if (process.argv[2] == 'ca')
+  createAccounts()
+else if (process.argv[2] == 'hgp')
+  handGameProcess()
+else if (process.argv[2] == 'agp')
+  autoGameProcess()
+else if (process.argv[2] == 'bot')
+  botProcess()
